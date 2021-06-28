@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Grande', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+ }
+ 
+ img {
+    max-width: 100%;
+    display: block;
+ }
+ 
+ .image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+ }
+ 
+ 
+ h2,
+ h3 {
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #041a41;
+    margin-top: 0;
+ }
+ 
+ h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: snow;
+     font-family:  Verdana, sans-serif;
+ }
+ 
+ h3 {
+    color: #1792d2;
+ }
+ 
+ .subtitle {
+     font-family:  'Arial', sans-serif;
+    font-weight: 700;
+    color: #68caff;
+    font-size: .9rem;
+    margin: 0;
+ }
+ 
+ .article-title {
+    font-size: 1.5rem;
+ }
+ 
+ .article-read-more,
+ .article-info {
+    font-size: .875rem;
+ }
+ 
+ .article-read-more {
+    color: #68caff;
+    text-decoration: none;
+    font-weight: 700;
+ }
+ 
+ .article-read-more:hover,
+ .article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+ }
+ 
+ .article-info {
+    margin: 2em 0;
+ }
+ 
+ .container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+ }
+ 
+ .container-nav,
+ .container-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ 
+ header {
+    background: #020931;
+    text-align: center;
+    padding: 2em 0;
+    margin-bottom: 3em;
+ }
+ 
+ footer {
+    background: #020931;
+    color: white;
+    text-align: center;
+    padding: .5em 0;
+ }
+  
+ strong {
+    font-weight: 700;
+ }
+ 
+ nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
+ nav li {
+    margin: .5em 0;
+ }
+ 
+ nav a {
+     font-family: 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    margin: .25em 0;
+ }
+ 
+ nav a:hover,
+ nav a:focus {
+    color: #68caff;
+ }
+ 
+ .current-page {
+    border-bottom: 1px solid #68caff;
+ }
+ 
+ .current-page:hover {
+    color: #68caff;
+ }
+ 
+ .article-featured {
+    border-bottom: #020931 1px solid;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+ }
+ 
+ .article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+ }
+ 
+ .article-recent-main {
+    order: 2;
+ }
+ 
+ .article-recent-secondary {
+    order: 1;
+ }
+ 
+ .sidebar-widget {
+    border: 1px solid #020931;
+    margin-bottom: 2em;
+    padding: 1em;
+ }
+
+ .button {
+    border: none;
+    padding: 16px 32px;
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #020931; 
+    color: #ffffff; 
+  }
+  
+  .button:hover {
+    background-color: #68caff;
+    color: rgb(0, 1, 44);
+  }
+
+ .widget-title {
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 700;
+ }
+ 
+ .widget-recent-post-title {
+    font-size: 1rem;
+ }
+ 
+ .widget-recent-post {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #0b0225;
+    margin-bottom: 1em;
+ }
+ 
+ .widget-recent-post:last-child {
+    border: 0;
+    margin: 0;
+ }
+ 
+ .widget-image {
+    order: -1;
+    margin-bottom: .5em;
+ }
+ 
+ 
+ @media (min-width: 675px) {
+    .container-nav,
+    .container-flex {
+       flex-direction: row;
+    }
+    
+    .container-nav{
+       align-items: center;
+    }
+    
+    main {
+       width: 70%;
+    }
+ 
+    aside {
+       width: 25%;
+       min-width: 200px;
+       margin-left: 1em;
+    }
+    
+    nav ul {
+       flex-direction: row;
+    }
+    
+    nav li {
+       margin-left: 2em;
+    }
+    
+    
+    .article-recent {
+       flex-direction: row;
+       justify-content: space-between;
+    }
+    
+    .article-recent-main {
+       width: 68%;
+    }
+    
+    .article-recent-secondary {
+       width: 30%;
+    }
+    
+    .article-title {
+       order: 99;
+    }
+    
+    .article-image {
+       width: 100%;
+       min-height: 200px;
+       object-fit: cover;
+    }
+    
+    
+    .article-featured {
+       display: flex;
+       flex-direction: column;
+    }
+    
+    .article-image {
+       order: -2;
+    }
+    
+    .article-info {
+       order: -1;
+    }
+    
+    .article-title {
+       order: 0;
+    }
+    
+ }
+ 
+ 
+ 
